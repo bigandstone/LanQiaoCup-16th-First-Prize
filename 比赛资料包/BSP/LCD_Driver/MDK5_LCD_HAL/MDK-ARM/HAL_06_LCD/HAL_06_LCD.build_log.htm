@@ -1,0 +1,88 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.41.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: _ jiasuo, 114514, LIC=1WSKC-7BJGQ-5B6EB-2C8JA-BQK6I-K3057
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.41.0.0
+Toolchain Path:  D:\Study\MDK\Keil MDK5.41\Core\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.22
+Assembler:       Armasm.exe V6.22
+Linker/Locator:  ArmLink.exe V6.22
+Library Manager: ArmAr.exe V6.22
+Hex Converter:   FromElf.exe V6.22
+CPU DLL:         SARMCM3.DLL V5.41.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.21.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\个人资料\个人\蓝桥杯\DP2024_ES(嵌入式)\BSP\LCD_Driver\MDK5_LCD_HAL\MDK-ARM\LCD_TEST.uvprojx
+Project File Date:  04/12/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.22', folder: 'D:\Study\MDK\Keil MDK5.41\Core\ARM\ARMCLANG\Bin'
+Build target 'HAL_06_LCD'
+assembling startup_stm32g431xx.s...
+compiling stm32g4xx_ll_pwr.c...
+compiling stm32g4xx_hal_flash_ramfunc.c...
+compiling stm32g4xx_it.c...
+compiling stm32g4xx_hal_tim_ex.c...
+compiling stm32g4xx_hal.c...
+compiling main.c...
+compiling stm32g4xx_hal_msp.c...
+compiling stm32g4xx_hal_tim.c...
+compiling stm32g4xx_hal_flash_ex.c...
+compiling stm32g4xx_hal_gpio.c...
+compiling stm32g4xx_hal_rcc.c...
+compiling stm32g4xx_hal_flash.c...
+compiling stm32g4xx_hal_rcc_ex.c...
+compiling stm32g4xx_hal_exti.c...
+compiling system_stm32g4xx.c...
+compiling stm32g4xx_hal_pwr.c...
+compiling stm32g4xx_hal_dma_ex.c...
+compiling stm32g4xx_hal_dma.c...
+compiling stm32g4xx_hal_cortex.c...
+compiling stm32g4xx_hal_pwr_ex.c...
+../Src/lcd.c(200): warning: passing 'char[21]' to parameter of type 'u8 *' (aka 'unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  200 |     LCD_DisplayStringLine(Line, "                    ");
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~
+../Inc\lcd.h(187): note: passing argument to parameter 'ptr' here
+  187 | void LCD_DisplayStringLine(u8 Line, u8 *ptr);
+      |                                         ^
+1 warning generated.
+compiling lcd.c...
+linking...
+Program Size: Code=14142 RO-data=5082 RW-data=16 ZI-data=1032  
+FromELF: creating hex file...
+"HAL_06_LCD\HAL_06_LCD.axf" - 0 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32G4xx_DFP.1.2.0.pack
+                Keil::STM32G4xx_DFP@1.2.0
+                STMicroelectronics STM32G4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_HAL_06_LCD
+  D:/Study/MDK/Keil MDK5.41/Pack/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  D:/Study/MDK/Keil MDK5.41/Pack/Keil/STM32G4xx_DFP/1.2.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
